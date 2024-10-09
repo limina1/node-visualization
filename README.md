@@ -16,7 +16,7 @@ Define a dictionary of lists, where the key is the name of a node
   };
 ```
 
-## Implementation features
+## Future Implementation features
 - auto generate network randomly, given num nodes, num containers and probabilities
 - auto generate tags from given probabilities
 - connect notes with tags to tag node
