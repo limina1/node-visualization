@@ -36,6 +36,7 @@ declare module '$env/static/private' {
 	export const I3SOCK: string;
 	export const NODE: string;
 	export const npm_package_scripts_check_watch: string;
+	export const SSH_AUTH_SOCK: string;
 	export const npm_package_private: string;
 	export const SHELL_SESSION_ID: string;
 	export const DESKTOP_SESSION: string;
@@ -167,6 +168,7 @@ declare module '$env/dynamic/private' {
 		I3SOCK: string;
 		NODE: string;
 		npm_package_scripts_check_watch: string;
+		SSH_AUTH_SOCK: string;
 		npm_package_private: string;
 		SHELL_SESSION_ID: string;
 		DESKTOP_SESSION: string;
