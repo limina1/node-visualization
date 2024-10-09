@@ -1,16 +1,30 @@
 # d3 visualization of node network structure
 ![networkImage](./images/network.png)
-## Creating a project
+## Creating graph
+Define a dictionary of lists, where the key is the name of a node
 
-If you're seeing this, you've probably already done this step. Congrats!
+``` js
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+  const networkData = {
+    1: [2, 3, 4, 5],
+    3: [6, 7, 8, 9, 10],
+    9: [11, 12, 13, 14],
+    12: [15, 16, 17, 18, 19, 20],
+    21: [22, 23, 24, 25, 26, 27],
+    30: [31, 32, 33, 34, 35, 36],
+    33: [37, 38, 39, 40, 41, 42],
+  };
 ```
+
+## Implementation features
+- auto generate network randomly, given num nodes, num containers and probabilities
+- auto generate tags from given probabilities
+- connect notes with tags to tag node
+- loose/singleton node connections to other nodes
+- external source nodes
+- connections from disconnected components
+- include distance proximity to specific nodes
+- collapse component into just index nodes, including the properties of all contained nodes, collapse whole component into a single index `component` is graph terminology for disconnected graph
 
 ## Developing
 
